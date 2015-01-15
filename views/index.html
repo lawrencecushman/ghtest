@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
-
+    <ul>
+    {% for home in homes %}
+        <li>{{home}}</li>
+    {% endfor %}
+    </ul>
     <h1>You can add your site here.</h1>
 
     <h2>To ensure that material-design theme is working, check out the buttons below.</h2>
