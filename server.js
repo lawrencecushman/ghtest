@@ -5,14 +5,14 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('ghtest:server');
+var debug = require('debug')('lghtest:server');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = parseInt(process.env.PORT, 10) || 3000;
+var port = process.env.PORT || 8080;
 app.set('port', port);
 
 /**
