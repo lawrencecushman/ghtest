@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title> {{title}} </title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/stylesheets/ripples.min.css'>
+    <link rel='stylesheet' href='/stylesheets/material-wfont.min.css'>
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script src="./javascripts/ripples.min.js"></script>
+        <script src="./javascripts/material.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $.material.init();
+            });
+        </script>
+  </body>
+</html>
